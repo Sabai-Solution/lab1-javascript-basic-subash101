@@ -1,7 +1,7 @@
 function validateEmptyValues(){
 
 var txtEmail = document.getElementsByTagName('txtEmail');
-var txtUn = document.getElementsByTagName('txtUn');
+var txtUn = document.getElementsByTagName('txtUsername');
 var txtPassword = document.getElementsByTagName('txtPassword');
 
 var appendError = "";
@@ -25,7 +25,7 @@ if (txtPassword=="") {
 
 if (appendError !="") {
  		appendError = appendError+" can not be empty ";
- 	appendError = appendError+" un ";
+ 	//appendError = appendError+" un ";
  	alert(appendError);
  	return false;
     }
