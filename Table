@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	var StudentList = [
+						{"Sno":1, "name":"shyam"},
+						{ "Sno":2, "name":"hari"},
+					  ];
+
+	//create table
+	var my_table="<table border='1'>";
+	//static banako for fixed heading
+	my_table += "<tr><td>Sno</td><td>name</td></tr>"
+
+	for(var i=0;i<StudentList.length;i++)
+	{
+		//alert(i);
+		my_table += "<tr><td>";
+		my_table +=StudentList[i].Sno;
+		my_table +="</td><td>";
+		my_table +=StudentList[i].name;
+		my_table +="</td></tr>";
+	}
+document.write(my_table);
+</script>
+
+</body>
+</html>
